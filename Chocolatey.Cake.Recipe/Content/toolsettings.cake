@@ -54,7 +54,7 @@ public static class ToolSettings
     public static string XUnitTool { get; private set; }
 
     public static void SetToolPreprocessorDirectives(
-        string amazonLambdaGlobalTool = "#tool dotnet:?package=amazon.lambda.tools&version=5.13.0",
+        string amazonLambdaGlobalTool = "#tool dotnet:?package=amazon.lambda.tools&version=5.4.5",
         string dependencyCheckTool = "#tool nuget:?package=DependencyCheck.Runner.Tool&version=3.2.1&include=./**/dependency-check.sh&include=./**/dependency-check.bat",
         string dotNetFormatGlobalTool = "#tool dotnet:?package=dotnet-format&version=5.1.250801",
         string gitVersionGlobalTool = "#tool dotnet:?package=GitVersion.Tool&version=5.10.1",
@@ -71,7 +71,7 @@ public static class ToolSettings
         string reSharperReportsTool = "#tool nuget:?package=ReSharperReports&version=0.2.0",
         string reSharperTools = "#tool nuget:?package=JetBrains.ReSharper.CommandLineTools&version=2017.2.0",
         string sonarQubeTool = "#tool nuget:?package=MSBuild.SonarQube.Runner.Tool&version=4.8.0",
-        string strongNameSignerTool = "#tool nuget:?package=Brutal.Dev.StrongNameSigner&version=2.6.0",
+        string strongNameSignerTool = "#tool nuget:?package=Brutal.Dev.StrongNameSigner&version=3.6.3",
         string wixTool = "#tool nuget:?package=WiX&version=3.11.2",
         string xunitTool = "#tool nuget:?package=xunit.runner.console&version=2.4.1"
     )
