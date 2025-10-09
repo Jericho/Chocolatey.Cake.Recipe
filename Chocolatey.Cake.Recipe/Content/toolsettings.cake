@@ -54,26 +54,26 @@ public static class ToolSettings
     public static string XUnitTool { get; private set; }
 
     public static void SetToolPreprocessorDirectives(
-        string amazonLambdaGlobalTool = "#tool dotnet:?package=amazon.lambda.tools&version=5.4.5",
+        string amazonLambdaGlobalTool = "#tool dotnet:?package=amazon.lambda.tools&version=5.13.0",
         string dependencyCheckTool = "#tool nuget:?package=DependencyCheck.Runner.Tool&version=3.2.1&include=./**/dependency-check.sh&include=./**/dependency-check.bat",
         string dotNetFormatGlobalTool = "#tool dotnet:?package=dotnet-format&version=5.1.250801",
-        string gitVersionGlobalTool = "#tool dotnet:?package=GitVersion.Tool&version=5.10.1",
-        string gitVersionTool = "#tool nuget:?package=GitVersion.CommandLine&version=5.10.1",
+        string gitVersionGlobalTool = "#tool dotnet:?package=GitVersion.Tool&version=6.4.0",
+        string gitVersionTool = "#tool nuget:?package=GitVersion.CommandLine&version=5.12.0",
         string gitReleaseManagerGlobalTool = "#tool dotnet:?package=GitReleaseManager.Tool&version=0.20.0",
         string gitReleaseManagerTool = "#tool nuget:?package=GitReleaseManager&version=0.20.0",
         string ilMergeTool = "#tool nuget:?package=ilmerge&version=3.0.41",
-        string msbuildExtensionPackTool = "#tool nuget:?package=MSBuild.Extension.Pack&version=1.9.0",
-        string nunitTool = "#tool nuget:?package=NUnit.ConsoleRunner&version=3.10.0",
+        string msbuildExtensionPackTool = "#tool nuget:?package=MSBuild.Extension.Pack&version=1.9.1",
+        string nunitTool = "#tool nuget:?package=NUnit.ConsoleRunner&version=3.20.1",
         string openCoverTool = "#tool nuget:?package=OpenCover&version=4.7.1221",
-        string reportGeneratorGlobalTool = "#tool dotnet:?package=dotnet-reportgenerator-globaltool&version=4.8.5",
-        string reportGeneratorTool = "#tool nuget:?package=ReportGenerator&version=5.1.6",
+        string reportGeneratorGlobalTool = "#tool dotnet:?package=dotnet-reportgenerator-globaltool&version=5.4.17",
+        string reportGeneratorTool = "#tool nuget:?package=ReportGenerator&version=5.4.17",
         string reportUnitTool = "#tool nuget:?package=ReportUnit&version=1.2.1",
-        string reSharperReportsTool = "#tool nuget:?package=ReSharperReports&version=0.2.0",
-        string reSharperTools = "#tool nuget:?package=JetBrains.ReSharper.CommandLineTools&version=2017.2.0",
+        string reSharperReportsTool = "#tool nuget:?package=ReSharperReports&version=0.4.0",
+        string reSharperTools = "#tool nuget:?package=JetBrains.ReSharper.CommandLineTools&version=2025.2.3",
         string sonarQubeTool = "#tool nuget:?package=MSBuild.SonarQube.Runner.Tool&version=4.8.0",
-        string strongNameSignerTool = "#tool nuget:?package=Brutal.Dev.StrongNameSigner&version=2.6.0",
-        string wixTool = "#tool nuget:?package=WiX&version=3.11.2",
-        string xunitTool = "#tool nuget:?package=xunit.runner.console&version=2.4.1"
+        string strongNameSignerTool = "#tool nuget:?package=Brutal.Dev.StrongNameSigner&version=3.6.3",
+        string wixTool = "#tool nuget:?package=WiX&version=6.0.2",
+        string xunitTool = "#tool nuget:?package=xunit.runner.console&version=2.9.3"
     )
     {
         AmazonLambdaGlobalTool = amazonLambdaGlobalTool;
