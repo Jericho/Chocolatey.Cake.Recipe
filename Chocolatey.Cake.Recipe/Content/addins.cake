@@ -19,36 +19,36 @@
 
 #addin nuget:?package=Cake.Coverlet&version=2.5.4
 #addin nuget:?package=Cake.DependencyCheck&version=1.2.0
-#addin nuget:?package=Cake.Discord&version=0.2.1
+#addin nuget:?package=Cake.Discord&version=0.3.0
 #addin nuget:?package=Cake.Docker&version=1.0.0
-#addin nuget:?package=Cake.Eazfuscator.Net&version=0.1.0
-#addin nuget:?package=Cake.Figlet&version=1.2.0
-#addin nuget:?package=Cake.FileHelpers&version=3.2.0
+#addin nuget:?package=Cake.Eazfuscator.Net&version=0.2.0
+#addin nuget:?package=Cake.Figlet&version=1.4.0
+#addin nuget:?package=Cake.FileHelpers&version=3.4.0
 #addin nuget:?package=Cake.Git&version=1.1.0
-#addin nuget:?package=Cake.Gulp&version=0.11.0
-#addin nuget:?package=Cake.Incubator&version=5.1.0
-#addin nuget:?package=Cake.Issues&version=0.7.1
-#addin nuget:?package=Cake.Issues.MsBuild&version=0.7.2
-#addin nuget:?package=Cake.Issues.InspectCode&version=0.7.1
-#addin nuget:?package=Cake.Issues.Reporting&version=0.7.0
-#addin nuget:?package=Cake.Issues.Reporting.Generic&version=0.7.2
-#addin nuget:?package=Cake.Json&version=4.0.0
-#addin nuget:?package=Cake.Kudu&version=0.8.0
+#addin nuget:?package=Cake.Gulp&version=0.12.0
+#addin nuget:?package=Cake.Incubator&version=5.2.0
+#addin nuget:?package=Cake.Issues&version=0.9.1
+#addin nuget:?package=Cake.Issues.MsBuild&version=0.9.1
+#addin nuget:?package=Cake.Issues.InspectCode&version=0.9.1
+#addin nuget:?package=Cake.Issues.Reporting&version=0.9.0
+#addin nuget:?package=Cake.Issues.Reporting.Generic&version=0.9.0
+#addin nuget:?package=Cake.Json&version=5.3.0
+#addin nuget:?package=Cake.Kudu&version=0.11.0
 #addin nuget:?package=Cake.Mastodon&version=1.0.0
-#addin nuget:?package=Cake.Npm&version=0.16.0
+#addin nuget:?package=Cake.Npm&version=0.17.0
 #addin nuget:?package=Cake.PowerShell&version=0.4.8
-#addin nuget:?package=Cake.ReSharperReports&version=0.10.0
+#addin nuget:?package=Cake.ReSharperReports&version=0.11.1
 #addin nuget:?package=Cake.Slack&version=0.13.0
 #addin nuget:?package=Cake.Sonar&version=1.1.26
-#addin nuget:?package=Cake.StrongNameSigner&version=0.1.0
+#addin nuget:?package=Cake.StrongNameSigner&version=0.2.0
 #addin nuget:?package=Cake.StrongNameTool&version=0.0.5
 #addin nuget:?package=Cake.Transifex&version=1.0.1
 #addin nuget:?package=Cake.Twitter&version=0.11.1
 #addin nuget:?package=MagicChunks&version=2.0.0.119
 
 // TODO: Conditionally decide whether to install packages or not
-#addin nuget:?package=Cake.Issues.PullRequests&version=0.7.0
-#addin nuget:?package=Cake.Issues.PullRequests.AppVeyor&version=0.7.0
+#addin nuget:?package=Cake.Issues.PullRequests&version=0.9.1
+#addin nuget:?package=Cake.Issues.PullRequests.AppVeyor&version=0.9.0
 
 Action<string, IDictionary<string, string>> RequireAddin = (code, envVars) => {
     var script = MakeAbsolute(File(string.Format("./{0}.cake", Guid.NewGuid())));
